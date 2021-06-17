@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#fff</color>
+    <color name="black">#272626</color>
+    <color name="background">#FF56AAED</color>
+    <color name="code_bg">#05B6CD</color>
+<!--    <color name="black_light">#ECEBEB</color>-->
+
+
+<!--    <color name="background">#FC9879</color>-->
+    <color name="blue">#2929AF</color>
+    <color name="orange1">#F56B40</color>
+    <color name="orange2">#F4511E</color>
+    <color name="orange3">#D87557</color>
+    <color name="white_view">#C3C3C3</color>
+    <color name="white_light">#F4F4F4</color>
+    <color name="black_light">#625F5F</color>
+    <color name="blue1">#039BE5</color>
+    <color name="blue2">#5454CD</color>
+    <color name="blue3">#509CEB</color>
+    <color name="white1">#BCC7D8</color>
+    <color name="blue4">#039BE5</color>
+    <color name="purple">#8E24AA</color>
+    <color name="black_light1">#7A7979</color>
+    <color name="green">#43A047</color>
+    <color name="green1">#B6ECBA</color>
+    <color name="yellow">#FDD835</color>
+    <color name="yellow1">#DDCD89</color>
+    <color name="yellow2">#E1E9A2</color>
+    <color name="brown">#F4511E</color>
+    <color name="brown1">#F0997E</color>
+    <color name="brown2">#F4C9BB</color>
+    <color name="purple1">#DFAEEC</color>
+
+    <color name="hardpurple">#8614E9</color>
+    <color name="textInputLayout">#96ffffff</color>
+
+    <color name="placeholder_bg">#dddddd</color>
+</resources>

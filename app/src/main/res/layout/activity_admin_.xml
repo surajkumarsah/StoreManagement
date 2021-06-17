@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        tools:context="admin.Admin_Activity"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="160dp"
+                  android:orientation="vertical">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:paddingLeft="10dp"
+                android:drawableStart="@drawable/ic_baseline_developer_mode_24"
+                android:fontFamily="@font/gabriela_regular"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="Add User"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/gabriela_regular"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:text="View more"/>
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:padding="5dp"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+        >
+
+            <RelativeLayout
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/blue_light"
+                    android:elevation="10dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="5dp"
+            >
+
+                <ImageView
+                        android:id="@+id/add_seller"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_add_round"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Add"
+                          android:textColor="@color/white"
+                          android:layout_alignParentBottom="true"
+                          android:layout_centerInParent="true"
+                          android:fontFamily="@font/gabriela_regular"
+                          android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yello_light"
+                    android:padding="2dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginStart="5dp"
+
+            >
+
+
+                <ImageView
+                        android:id="@+id/custHome"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_mail_round"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Mail"
+                          android:textColor="@color/white"
+                          android:layout_alignParentBottom="true"
+                          android:layout_centerInParent="true"
+                          android:fontFamily="@font/gabriela_regular"
+                          android:textSize="18sp"/>
+
+
+                <!--                <com.airbnb.lottie.LottieAnimationView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        app:lottie_autoPlay="true"-->
+                <!--                        app:lottie_loop="true"-->
+                <!--                        app:lottie_fileName="developer1.json"/>-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/red_light"
+                    android:padding="2dp"
+                    android:layout_marginStart="5dp"
+
+            >
+
+            <ImageView
+                    android:id="@+id/show_seller"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_persons_round"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Sellers"
+                      android:textColor="@color/white"
+                      android:layout_alignParentBottom="true"
+                      android:layout_centerInParent="true"
+                      android:fontFamily="@font/gabriela_regular"
+                      android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/blue_light"
+                    android:padding="2dp"
+                    android:layout_marginStart="5dp"
+
+            >
+
+
+            <ImageView
+                    android:id="@+id/custDes"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_persons_round"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Seller"
+                      android:textColor="@color/white"
+                      android:layout_alignParentBottom="true"
+                      android:layout_centerInParent="true"
+                      android:fontFamily="@font/gabriela_regular"
+                      android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/noti_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "223090719207",
+    "firebase_url": "https://happyworld-7b5bc-default-rtdb.firebaseio.com",
+    "project_id": "happyworld-7b5bc",
+    "storage_bucket": "happyworld-7b5bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223090719207:android:2c9f83f80005ff44fd2542",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223090719207-3npvhg0s1ac4gfjbrs6cfphlt7oqir1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZnc9WdL2h_EhcjWoXlEJBA6o_Hlf9vjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223090719207-3npvhg0s1ac4gfjbrs6cfphlt7oqir1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

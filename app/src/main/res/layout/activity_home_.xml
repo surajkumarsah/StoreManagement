@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout
+        android:id="@+id/drawer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home_Activity">
+
+    <nl.psdcompany.duonavigationdrawer.views.DuoMenuView
+            android:tag="menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <TextView
+                    android:fontFamily="@font/amita_regular"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:text="Intelectual"
+                    android:textColor="@color/white"/>
+
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+
+                    <TextView
+                            android:fontFamily="@font/amita_regular"
+                            android:textSize="16sp"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Suraj Arya"
+                            android:textColor="@color/white"/>
+
+                    <TextView
+                            android:fontFamily="@font/amita_regular"
+                            android:textSize="16sp"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+91-9199730700"
+                            android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginRight="100dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/user"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/ll_Home"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginHorizontal="24dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/home"
+                        app:tint="@color/white" />
+
+                <TextView
+                        android:fontFamily="@font/amita_regular"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/ll_Profile"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginHorizontal="24dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/person"
+                        app:tint="@color/white" />
+
+                <TextView
+                        android:fontFamily="@font/amita_regular"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_Setting"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginHorizontal="24dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/settings"
+                        app:tint="@color/white" />
+
+                <TextView
+                        android:fontFamily="@font/amita_regular"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Setting"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_Share"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginHorizontal="24dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/share"
+                        app:tint="@color/white" />
+
+                <TextView
+                        android:fontFamily="@font/amita_regular"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Share"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_Login"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginHorizontal="24dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_baseline_vpn_key_24"
+                        app:tint="@color/white" />
+
+                <TextView
+                        android:fontFamily="@font/amita_regular"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_Logout"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginHorizontal="24dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/logout"
+                        app:tint="@color/white" />
+
+                <TextView
+                        android:fontFamily="@font/amita_regular"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </nl.psdcompany.duonavigationdrawer.views.DuoMenuView>
+
+    <androidx.cardview.widget.CardView
+
+            android:tag="content"
+            android:elevation="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+<!--            <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:background="@drawable/bg"/>-->
+
+            <LinearLayout
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                <LinearLayout
+                        android:layout_marginTop="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/frame"
+                            android:layout_marginTop="0dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.Toolbar
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/toolbar"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>

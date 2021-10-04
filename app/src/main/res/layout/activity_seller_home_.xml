@@ -25,7 +25,7 @@
                     android:fontFamily="@font/gabriela_regular"
                     android:textColor="@color/black"
                     android:textSize="15sp"
-                    android:text="Add User"/>
+                    android:text="Seller Home"/>
 
             <TextView
                     android:layout_width="wrap_content"
@@ -69,7 +69,7 @@
                             android:src="@drawable/ic_add_round"/>
 
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                              android:text="Add"
+                              android:text="Add Category"
                               android:textColor="@color/white"
                               android:layout_alignParentBottom="true"
                               android:layout_centerInParent="true"
@@ -97,20 +97,13 @@
                             android:src="@drawable/ic_mail_round"/>
 
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                              android:text="Mail"
+                              android:text="Add Product"
                               android:textColor="@color/white"
                               android:layout_alignParentBottom="true"
                               android:layout_centerInParent="true"
                               android:fontFamily="@font/gabriela_regular"
                               android:textSize="18sp"/>
 
-
-                    <!--                <com.airbnb.lottie.LottieAnimationView-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="match_parent"-->
-                    <!--                        app:lottie_autoPlay="true"-->
-                    <!--                        app:lottie_loop="true"-->
-                    <!--                        app:lottie_fileName="developer1.json"/>-->
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -130,7 +123,7 @@
                             android:src="@drawable/ic_persons_round"/>
 
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                              android:text="Sellers"
+                              android:text="Show Category"
                               android:textColor="@color/white"
                               android:layout_alignParentBottom="true"
                               android:layout_centerInParent="true"
@@ -144,9 +137,7 @@
                         android:background="@drawable/blue_light"
                         android:padding="2dp"
                         android:layout_marginStart="5dp"
-
                 >
-
 
                     <ImageView
                             android:id="@+id/show_products"
@@ -156,7 +147,7 @@
                             android:src="@drawable/ic_persons_round"/>
 
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                              android:text="Seller"
+                              android:text="Show Products"
                               android:textColor="@color/white"
                               android:layout_alignParentBottom="true"
                               android:layout_centerInParent="true"

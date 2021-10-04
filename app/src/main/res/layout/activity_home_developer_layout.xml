@@ -56,6 +56,12 @@
                     android:padding="5dp"
             >
 
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/dev_img1"
+                        />
+
             </RelativeLayout>
 
             <RelativeLayout
@@ -67,6 +73,12 @@
                     android:layout_marginStart="5dp"
 
             >
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/dev_img2"
+                />
 <!--                <com.airbnb.lottie.LottieAnimationView-->
 <!--                        android:layout_width="match_parent"-->
 <!--                        android:layout_height="match_parent"-->
@@ -84,6 +96,12 @@
 
             >
 
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/dev_img3"
+                />
+
             </RelativeLayout>
 
             <RelativeLayout
@@ -94,6 +112,12 @@
                     android:layout_marginStart="5dp"
 
             >
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/dev_img4"
+                />
 
             </RelativeLayout>
 

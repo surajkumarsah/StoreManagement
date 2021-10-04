@@ -1,0 +1,58 @@
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="300dp"
+              android:orientation="vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+    >
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="230dp"
+                       android:src="@drawable/temp1"
+                       android:background="@drawable/content_outline_solid_white"
+                       android:fitsSystemWindows="true"
+                       android:scaleType="fitXY"
+                       android:id="@+id/temp_image"
+            />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/temp_name"
+                      android:textColor="@color/white"
+                      android:textStyle="bold"
+                      android:fontFamily="@font/gabriela_regular"
+                      android:text="Temple Name"
+                      android:layout_marginTop="-35dp"
+                      android:textSize="20sp"
+                      android:layout_gravity="center_horizontal"
+            />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/temp_shortDesc"
+                      android:textColor="@color/white1"
+                      android:layout_marginTop="11dp"
+                      android:justificationMode="inter_word"
+                      android:textStyle="normal"
+                      android:text="Short Desc : fdkfkdjf jkjdkfjdkf jkjdf kjkd jkjkfdf kjkjkjdf kjkjj jkj jkj kjkjkjkjjjk jjiere ijie kdfkdfdfdf dfd"
+
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

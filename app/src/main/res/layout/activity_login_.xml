@@ -174,6 +174,23 @@
 
         </LinearLayout>
 
+        <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            />
+
+        <Button
+                android:id="@+id/button_facebook"
+                style="@style/FacebookLoginButton"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="Continue With Facebook"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
 
         <TextView
                 android:layout_width="match_parent"

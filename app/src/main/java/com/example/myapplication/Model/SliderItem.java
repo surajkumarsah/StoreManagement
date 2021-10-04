@@ -1,7 +1,5 @@
 package com.example.myapplication.Model;
 
-import android.graphics.drawable.Drawable;
-
 public class SliderItem {
 
     public String description;

@@ -16,6 +16,24 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".DynmContOfApp.AddImages_Activity">
+        </activity>
+        <activity android:name=".PDFReader.TestActivity">
+        </activity>
+        <activity android:name=".PDFReader.ViewPdfActivity">
+        </activity>
+        <activity android:name=".PDFReader.PDFContainer_Activity">
+        </activity>
+        <activity android:name=".PDFReader.PDFUpload_Activity">
+        </activity>
+        <activity android:name=".PDFReader.PDFMain_Activity">
+        </activity>
+        <activity android:name=".Temple.AddTemple_Activity">
+        </activity>
+        <activity android:name=".Temple.Temple_View_Activity">
+        </activity>
+        <activity android:name=".Temple.Temple_Home_Activity">
+        </activity>
         <activity android:name=".Customer.ShowDetails_Activity">
         </activity>
         <activity android:name=".Customer.CustomerHome_Activity">
@@ -29,9 +47,16 @@
         <activity android:name=".seller.AddCategory_Activity">
         </activity>
         <activity android:name=".SignUp_Activity">
-        </activity>
-        <activity android:name=".Login_Activity">
-        </activity>
+        </activity> <!-- <activity android:name=".Login_Activity"> -->
+        <!-- </activity> -->
+        <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/facebook_app_id"/>
+
+        <activity
+                android:name=".Login_Activity"
+                android:configChanges="keyboard|keyboardHidden       |screenLayout|screenSize       |orientation"
+                android:label="@string/app_name"/>
         <activity android:name=".seller.SellerHome_Activity">
         </activity>
         <activity android:name=".admin.Admin_Activity">

@@ -4,20 +4,22 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
-import android.util.Log;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.example.myapplication.Components.ToastNotification;
 import com.example.myapplication.Model.SliderItem;
 import com.example.myapplication.Model.Users;
+import com.example.myapplication.PDFReader.PDFMain_Activity;
+import com.example.myapplication.Temple.Temple_Home_Activity;
+import com.example.myapplication.Temple.Temple_View_Activity;
 import com.example.myapplication.admin.Admin_Activity;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.*;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
@@ -42,6 +44,11 @@ public class HomeFragment extends Fragment {
     View view;
     FirebaseAuth mAuth;
     ImageView profileImage;
+
+    private DatabaseReference sliderImgRef;
+
+    ImageView devImg1, devImg2, devImg3, devImg4, flagImg1, flagImg2, flagImg3, flagImg4, login;
+    Button readersClub;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -94,6 +101,46 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        devImg1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), Temple_Home_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        devImg2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), Temple_View_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), Login_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        readersClub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), PDFMain_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        //Code Touch
+        flagImg1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
         // Inflate the layout for this fragment
         return view;
     }
@@ -102,26 +149,65 @@ public class HomeFragment extends Fragment {
 
         Users user = new Users();
 
+        sliderImgRef = FirebaseDatabase.getInstance().getReference().child("SliderImage");
+
+        devImg1 = (ImageView) view.findViewById(R.id.dev_img1);
+        devImg2 = (ImageView) view.findViewById(R.id.dev_img2);
+        devImg3 = (ImageView) view.findViewById(R.id.dev_img3);
+        devImg4 = (ImageView) view.findViewById(R.id.dev_img4);
+
+        flagImg1 = (ImageView) view.findViewById(R.id.flag_img1);
+        flagImg2 = (ImageView) view.findViewById(R.id.flag_img2);
+        flagImg3 = (ImageView) view.findViewById(R.id.flag_img3);
+        flagImg4 = (ImageView) view.findViewById(R.id.flag_img4);
+
+        login = (ImageView) view.findViewById(R.id.login);
+
+        readersClub = (Button) view.findViewById(R.id.reader_club);
+
+
+
         if (mAuth.getCurrentUser() != null)
         {
             user.setUserId(mAuth.getCurrentUser().getUid());
             user.setEmail(mAuth.getCurrentUser().getEmail());
             user.setMobile(mAuth.getCurrentUser().getPhoneNumber());
-
         }
 
+        //Image Slider
         SliderView sliderView = view.findViewById(R.id.imageSlider);
 
         SliderAdapterExample adapter = new SliderAdapterExample(getContext());
 
-        SliderItem s1 = new SliderItem("1st Image", R.drawable.person);
-        SliderItem s2 = new SliderItem("2nd Image", R.drawable.undraw_home);
-        SliderItem s3 = new SliderItem("3rd Image", R.drawable.bg);
+        SliderItem s1 = new SliderItem("Intellectual Mind App Development", R.drawable.banner1);
+        SliderItem s2 = new SliderItem("Modern Soft. Solution", R.drawable.banner2);
+        SliderItem s3 = new SliderItem("Contacts", R.drawable.banner3);
+        SliderItem s4 = new SliderItem("Contacts", R.drawable.banner4);
+//
+//
+//        sliderImgRef.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange( DataSnapshot dataSnapshot) {
+//                SliderAdapterExample adapter1 = new SliderAdapterExample(getContext());
+//
+//                for (DataSnapshot url : dataSnapshot.getChildren()){
+//                    SliderItem sI = url.getValue(SliderItem.class);
+//
+//                    adapter1.addItem(sI);
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled( DatabaseError databaseError) {
+//
+//            }
+//        });
 
 
         adapter.addItem(s1);
         adapter.addItem(s2);
         adapter.addItem(s3);
+        adapter.addItem(s4);
 
         sliderView.setSliderAdapter(adapter);
 
@@ -132,17 +218,22 @@ public class HomeFragment extends Fragment {
         sliderView.setIndicatorUnselectedColor(Color.GRAY);
         sliderView.setScrollTimeInSec(4); //set scroll delay in seconds :
         sliderView.startAutoCycle();
+
+
+
+
+        //Add images to development layout
+        devImg1.setImageResource(R.drawable.ic_baseline_person_24);
+        devImg2.setImageResource(R.drawable.ic_baseline_person_24);
+        devImg3.setImageResource(R.drawable.ic_baseline_person_24);
+        devImg4.setImageResource(R.drawable.ic_baseline_person_24);
+
+        flagImg1.setImageResource(R.drawable.ic_baseline_person_24);
+        flagImg2.setImageResource(R.drawable.ic_baseline_person_24);
+        flagImg3.setImageResource(R.drawable.ic_baseline_person_24);
+        flagImg4.setImageResource(R.drawable.ic_baseline_person_24);
+
+
     }
 
-//    @Override
-//    public void onClick(View v){
-//        Log.e("app", "onclick listner");
-//
-//        switch (v.getId()){
-//            case R.id.admin_btn:
-//                Intent intent = new Intent(getContext(), Admin_Activity.class);
-//                startActivity(intent);
-//                break;
-//        }
-//    }
 }

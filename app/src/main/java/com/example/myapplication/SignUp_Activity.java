@@ -269,6 +269,9 @@ public class SignUp_Activity extends AppCompatActivity {
                                     progressBar.setVisibility(View.GONE);
                                     Toast.makeText(SignUp_Activity.this, "Congratulation, Details has been updated Successfully.", Toast.LENGTH_SHORT).show();
 
+                                    Intent homePage = new Intent(getApplicationContext(), HomeFragment.class);
+                                    startActivity(homePage);
+
                                 } else {
                                     progressBar.setVisibility(View.GONE);
                                     Toast.makeText(SignUp_Activity.this, "Network Error, Please try again after Sometime.", Toast.LENGTH_SHORT).show();

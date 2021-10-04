@@ -30,6 +30,16 @@
 
         <include layout="@layout/admin_layout"/>
 
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Readers Club"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"
+                android:id="@+id/reader_club"
+                />
+
         </LinearLayout>
 
     </ScrollView>

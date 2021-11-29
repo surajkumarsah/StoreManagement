@@ -16,6 +16,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Quiz.QuizHome_Activity">
+        </activity>
         <activity android:name=".DynmContOfApp.AddImages_Activity">
         </activity>
         <activity android:name=".PDFReader.TestActivity">

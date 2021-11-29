@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import com.example.myapplication.Model.SliderItem;
 import com.example.myapplication.Model.Users;
 import com.example.myapplication.PDFReader.PDFMain_Activity;
+import com.example.myapplication.Quiz.QuizHome_Activity;
 import com.example.myapplication.Temple.Temple_Home_Activity;
 import com.example.myapplication.Temple.Temple_View_Activity;
 import com.example.myapplication.admin.Admin_Activity;
@@ -48,7 +49,7 @@ public class HomeFragment extends Fragment {
     private DatabaseReference sliderImgRef;
 
     ImageView devImg1, devImg2, devImg3, devImg4, flagImg1, flagImg2, flagImg3, flagImg4, login;
-    Button readersClub;
+    Button readersClub, quiz;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -133,6 +134,14 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        readersClub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), QuizHome_Activity.class);
+                startActivity(intent);
+            }
+        });
+
         //Code Touch
         flagImg1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -164,7 +173,7 @@ public class HomeFragment extends Fragment {
         login = (ImageView) view.findViewById(R.id.login);
 
         readersClub = (Button) view.findViewById(R.id.reader_club);
-
+        quiz = (Button) view.findViewById(R.id.quiz);
 
 
         if (mAuth.getCurrentUser() != null)

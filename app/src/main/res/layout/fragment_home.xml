@@ -40,6 +40,16 @@
                 android:id="@+id/reader_club"
                 />
 
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quiz"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"
+                android:id="@+id/quiz"
+        />
+
         </LinearLayout>
 
     </ScrollView>
